@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
+    <title>Jose Fidel Diaz PWA</title>
+</head>
+<body>
+    <header>
+        <h1>Api de rick y morty</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="search.html">Videos</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="videos">
+            <h2>Videos</h2>
+        </section>
+        <section id="buscar">
+            <h2>Trailers de temporadas y especiales</h2>
+                <article class="articulos">
+                    <div>
+                        <h3>Temporada 1 trailer</h3>
+                        <video src="videos/1.mp4" controls></video>
+                    </div>
+                    <div>
+                        <h3>Temporada 2 trailer</h3>
+                        <video src="videos/2.mp4" controls></video>
+                    </div>
+                    <div>
+                        <h3>Temporada 3 trailer</h3>
+                        <video src="videos/3.mp4" controls></video>
+                    </div>
+                    <div>
+                        <h3>Temporada 4 trailer</h3>
+                        <video src="videos/4.mp4" controls></video>
+                    </div>
+                    <div>
+                        <h3>Temporada 5 trailer</h3>
+                        <video src="videos/5.mp4" controls></video>
+                    </div>
+                    <div>
+                        <h3>Especial de los Simpsons/Rick y Morty</h3>
+                        <video src="videos/simp.mp4" controls></video>
+                    </div>
+                </article>
+        </section>
+    </main>
+    <script src="js/service.js"></script>
+</body>
+</html>
