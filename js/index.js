@@ -26,7 +26,7 @@ btn.addEventListener("click", e => {
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({query: getGrahql(buscar)})
     }
-    cargando.innerHTML = '...cagando';
+    cargando.innerHTML = '...cargando';
     if (buscar) {
         setTimeout(() => {
             cargando.innerHTML = '';
