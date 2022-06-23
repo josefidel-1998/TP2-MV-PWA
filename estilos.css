@@ -92,6 +92,7 @@ main{
 #btn-buscar{
     background-color: #23401b;
     padding-inline: 1rem;
+    padding-block: 0.5rem;
     border: none;
     outline: none;
     cursor: pointer;
@@ -136,7 +137,11 @@ main{
     justify-content: center;
     flex-direction: column;
     row-gap: 1.5rem;
-    background-color: #23551574 ;
+    background-color: #0d1809 ;
+    border-radius: 10px;
+}
+#cards figure img{
+    border-radius: 10px 10px 0px 0px;
 }
 #cards figure figcaption{
     display: flex;
@@ -146,6 +151,7 @@ main{
     row-gap: 1.5rem;
     padding-block: 0.5rem;
     padding-inline: 0.5rem;
+    color: white;
 }
 #cards figure figcaption button{
     background-color: #23401b;
@@ -160,8 +166,67 @@ main{
 #cards figure figcaption button:hover{
     background-color: #235515e6;
 }
+.cardOffline{
+    cursor: pointer;
+    background-size: 100%;
+    position: relative;
+}
+.cartas{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: all 1.3s ease-in-out;
+    backface-visibility: hidden;
+    position: relative;
+}
+.card-offline{
+    padding: 0.5rem;
+    transform: rotateY(0deg);
+}
+.figure-back{
+    padding: 0.5rem;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    background-color: #0d1809;
+    color:white;
+    text-align: center;
+    border-radius: 10px;
+}
+.cardOffline:hover > .card-offline{
+    transform: rotateY(-180deg);
+}
+.cardOffline:hover > .figure-back{
+    transform: rotateY(0deg);
+}
+/*
+.card-offline{
+    transform-style: preserve-3d;
+    transition: all 1.5s ease-in-out;
+    backface-visibility: hidden;
+}
+.cardOffline:hover .card-offline{
+    transform: perspective(1000px) rotateY(180deg);
+}
+.figure-back{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #23401b;
+    color: white;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(180deg);
+    position: absolute;
+}
+.card-offline:hover .figure-back{
+    transform: perspective(500px) rotateY(360deg);
+}*/
 .cargando{
     text-align: center;
+    font-size: 1.5rem;
     margin: auto;
     padding-inline: 1rem;
 }
@@ -247,6 +312,13 @@ video{
     color: white;
     font-size: 1.5rem;
 }
+#span-online{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
 @media screen and (max-width: 768px){
     header{
         flex-direction: column;
@@ -264,6 +336,9 @@ video{
     }
 }
 @media screen and (max-width: 450px){
+    h1{
+        text-align: center;
+    }
     header ul{
         flex-direction: column;
         row-gap: 4rem;
@@ -276,4 +351,54 @@ video{
         width: 50%;
         margin: auto;
     }
+    #form1{
+        padding-inline: 0;
+    }
+}
+
+/*Favoritos*/
+
+#favoritos{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    place-items: center;
+    row-gap: 2rem;
+    margin-block-start: 3rem;
+}
+#favoritos figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    background-color: #0d1809 ;
+    border-radius: 10px;
+}
+#favoritos figure img{
+    border-radius: 10px 10px 0px 0px;
+}
+#favoritos figure figcaption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+    color: white;
+}
+#favoritos figure figcaption button{
+    background-color: #23401b;
+    color: white;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    border-radius: .9rem;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+#favoritos figure figcaption button:hover{
+    background-color: #235515e6;
 }

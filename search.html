@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1>Api de rick y morty</h1>
+        <h1>Api de rick y morty <span id="modo"></span></h1>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="favoritos.html">Favoritos</a></li>
@@ -52,6 +52,16 @@
                 </article>
         </section>
     </main>
+    <script>
+    if(navigator.onLine){
+        console.log('Online');
+        modo.innerHTML = 'Online';
+    }else{
+        console.log('Offline');
+        modo.innerHTML = 'Offline';
+        body.style.background = '#548C45';
+      }
+    </script>
     <script src="js/service.js"></script>
 </body>
 </html>
