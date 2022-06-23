@@ -110,28 +110,28 @@ if (navigator.onLine) {
             descripcion: 'El adjudicador Rick junto con otros Ricks en la multitud estaban juzgando a los candidatos para el próximo presidente de The Citadel. Se demostró que no tomó muy en serio al presidente Morty y tampoco a los otros candidatos.'
         },
         {
+            nombre: 'Alien Rick',
+            img: 'https://rickandmortyapi.com/api/character/avatar/15.jpeg',
+            estatus: 'Vivo',
+            descripcion: 'Fue uno de los muchos Ricks que asistieron al juicio de Rick (C-137) ante el Consejo de Ricks en "Close Rick-counters of the Rick Kind".'
+        },
+        {
+            nombre: 'Evil Morty',
+            img: 'https://rickandmortyapi.com/api/character/avatar/118.jpeg',
+            estatus: 'Vivo',
+            descripcion: 'Es el principal antagonista de la serie, que actualmente se desempeña como el primer Morty en ser elegido democráticamente Presidente de la ciudadela.'
+        },
+        {
             nombre: 'Morty Smith',
             img: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
             estatus: 'Vivo',
-            descripcion: 'Conocido por su inquietud, torpeza y su cuestionable y dudosa personalidad, el personaje ha sido bien recibido por los seguidores de la serie. '
+            descripcion: 'Es uno de los protagonistas principales de la serie animada Rick and Morty. Tiene constantes aventuras con su abuelo Rick Sánchez para ayudarlo siendo la mayoría de las ocasiones en contra de su voluntad.'
         },
         {
-            nombre: 'Alien Morty',
-            img: 'https://rickandmortyapi.com/api/character/avatar/14.jpeg',
-            estatus: 'Desconocido',
-            descripcion: 'Alien Morty es un adolescente alienígena. Tiene la piel viscosa de color verde lima. Tiene dos antenas rizadas en la cabeza y cabello castaño corto.'
-        },
-        {
-            nombre: 'Summer Smith',
-            img: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg',
+            nombre: 'Beth Summer',
+            img: 'https://rickandmortyapi.com/api/character/avatar/4.jpeg',
             estatus: 'Vivo',
-            descripcion: 'Summer es una adolescente convencional y a menudo superficial, inicialmente de 17 años, que está obsesionada con mejorar su estatus social entre sus compañeros.'
-        },
-        {
-            nombre: 'Evil Summer Clone',
-            img: 'https://rickandmortyapi.com/api/character/avatar/120.jpeg',
-            estatus: 'Muerto',
-            descripcion: 'Era una versión alternativa del Summer original, que apareció en el episodio Meeseeks and Destroy.'
+            descripcion: 'Es la hija de Rick pero técnicamente es la hija de un Rick muerto en un accidente, a lo que el Rick y Morty originarios de la Dimensión C-137 ocuparon sus lugares.'
         }
     ];
 for(let personaje of personajes) {
