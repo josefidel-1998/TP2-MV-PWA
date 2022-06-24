@@ -171,6 +171,18 @@ main{
     background-size: 100%;
     position: relative;
 }
+#aviso{
+    display: none;
+    font-size: 1.2rem;
+    position:fixed;
+    bottom:5%;
+    right:5%;
+    background-color: #0d1809;
+    color: white;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    border-radius: .9rem;
+}
 .cartas{
     width: 100%;
     height: 100%;

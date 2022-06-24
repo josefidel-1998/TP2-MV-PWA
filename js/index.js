@@ -5,7 +5,7 @@ let error = document.querySelector('.error');
 let cargando = document.querySelector('.cargando');
 let agregar = [];
 let h2 = document.querySelector('.buscar h2');
-
+let aviso = document.querySelector('#aviso');
 const getGrahql = personaje => `query { 
     characters(filter: { name: "${personaje}" }) {results {name image status id} }}`;
 
@@ -74,6 +74,11 @@ const obtenerPersonajes = datos => {
     let botonAgregar = document.querySelectorAll('.btnAgregar');
     for (let boton of botonAgregar) {
         boton.addEventListener('click', e => {
+            aviso.style.display = 'block';
+            aviso.innerHTML = 'Agregado a favoritos'; 
+            setTimeout(() =>{
+                aviso.style.display = 'none';
+            },800)
             let id = e.target.dataset.id;
 
             if (agregar.indexOf(id) === -1) {
